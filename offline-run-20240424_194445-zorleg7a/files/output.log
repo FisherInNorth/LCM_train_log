@@ -1,0 +1,14 @@
+04/24/2024 19:44:49 - INFO - __main__ - ***** Running training *****
+04/24/2024 19:44:49 - INFO - __main__ -   Num batches each epoch = 333336
+04/24/2024 19:44:49 - INFO - __main__ -   Num Epochs = 1
+04/24/2024 19:44:49 - INFO - __main__ -   Instantaneous batch size per device = 12
+04/24/2024 19:44:49 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 12
+04/24/2024 19:44:49 - INFO - __main__ -   Gradient Accumulation steps = 1
+04/24/2024 19:44:49 - INFO - __main__ -   Total optimization steps = 10
+Steps:   0%|                                                                                                                                | 0/10 [00:00<?, ?it/s]/home/hepengyu/anaconda3/envs/test/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+Steps: 100%|████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:14<00:00,  1.25s/it, loss=0.00566, lr=1e-6]Configuration saved in /home/hepengyu/trainingLCM/output/unet/config.json
+Model weights saved in /home/hepengyu/trainingLCM/output/unet/diffusion_pytorch_model.safetensors
+Configuration saved in /home/hepengyu/trainingLCM/output/unet_target/config.json
+Model weights saved in /home/hepengyu/trainingLCM/output/unet_target/diffusion_pytorch_model.safetensors
+Checkpoint 'latest' does not exist. Starting a new training run.

@@ -1,0 +1,204 @@
+{
+    "os": "Linux-5.4.0-163-generic-x86_64-with-glibc2.31",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-04-24T11:44:45.933213",
+    "startedAt": "2024-04-24T11:44:45.862303",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--pretrained_teacher_model=/home/hepengyu/models/LCM_build",
+        "--output_dir=/home/hepengyu/trainingLCM/output",
+        "--mixed_precision=fp16",
+        "--resolution=512",
+        "--learning_rate=1e-6",
+        "--loss_type=huber",
+        "--ema_decay=0.95",
+        "--adam_weight_decay=0.0",
+        "--max_train_steps=10",
+        "--max_train_samples=4000000",
+        "--dataloader_num_workers=8",
+        "--train_shards_path_or_url=pipe:curl -L -s file:///home/hepengyu/testdb/00004.tar",
+        "--validation_steps=200",
+        "--checkpointing_steps=200",
+        "--checkpoints_total_limit=10",
+        "--train_batch_size=12",
+        "--gradient_checkpointing",
+        "--enable_xformers_memory_efficient_attention",
+        "--gradient_accumulation_steps=1",
+        "--use_8bit_adam",
+        "--resume_from_checkpoint=latest",
+        "--logging_dir=/home/hepengyu/trainingLCM/logs",
+        "--cache_dir=/home/hepengyu/trainingLCM/cache",
+        "--report_to=all",
+        "--num_ddim_timesteps=250",
+        "--seed=453645634"
+    ],
+    "state": "running",
+    "program": "/home/hepengyu/diffusers/examples/consistency_distillation/train_lcm_distill_sd_wds.py",
+    "codePathLocal": null,
+    "host": "gpu008",
+    "username": "hepengyu",
+    "executable": "/home/hepengyu/anaconda3/envs/test/bin/python3.10",
+    "cpu_count": 24,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 1.5637499999999995,
+        "min": 1500.0,
+        "max": 2850.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1.587,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.562,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.675,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.59,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.625,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.591,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.507,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.541,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.496,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.663,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.742,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.576,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.499,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.499,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.499,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.496,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.496,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.496,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.522,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.587,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.524,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.539,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.595,
+            "min": 1500.0,
+            "max": 2850.0
+        },
+        {
+            "current": 1.623,
+            "min": 1500.0,
+            "max": 2850.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 846.1398582458496,
+            "used": 789.1670265197754
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 5,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        },
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        },
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        },
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        },
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 503.6296157836914
+    }
+}
