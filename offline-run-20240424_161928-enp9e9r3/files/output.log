@@ -1,0 +1,19 @@
+04/24/2024 16:19:32 - INFO - __main__ - ***** Running training *****
+04/24/2024 16:19:32 - INFO - __main__ -   Num batches each epoch = 500000
+04/24/2024 16:19:32 - INFO - __main__ -   Num Epochs = 1
+04/24/2024 16:19:32 - INFO - __main__ -   Instantaneous batch size per device = 8
+04/24/2024 16:19:32 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+04/24/2024 16:19:32 - INFO - __main__ -   Gradient Accumulation steps = 1
+04/24/2024 16:19:32 - INFO - __main__ -   Total optimization steps = 1000
+04/24/2024 16:19:32 - INFO - accelerate.accelerator - Loading states from /home/hepengyu/trainingLCM/output/checkpoint-400
+04/24/2024 16:19:33 - INFO - accelerate.checkpointing - All model weights loaded successfully
+04/24/2024 16:19:34 - INFO - accelerate.checkpointing - All optimizer states loaded successfully
+04/24/2024 16:19:34 - INFO - accelerate.checkpointing - All scheduler states loaded successfully
+04/24/2024 16:19:34 - INFO - accelerate.checkpointing - All dataloader sampler states loaded successfully
+04/24/2024 16:19:34 - INFO - accelerate.checkpointing - GradScaler state loaded successfully
+04/24/2024 16:19:34 - INFO - accelerate.checkpointing - All random states loaded successfully
+04/24/2024 16:19:34 - INFO - accelerate.accelerator - Loading in 0 custom states
+Steps:  40%|█████████████████████████████████████████████████▌                                                                          | 400/1000 [00:00<?, ?it/s]/home/hepengyu/anaconda3/envs/test/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+Steps:  60%|████████████████████████████████████████████████████████▏                                     | 598/1000 [02:45<05:30,  1.22it/s, loss=0.0505, lr=1e-6]
+Resuming from checkpoint checkpoint-400
