@@ -1,0 +1,32 @@
+2024-04-30 10:41:11,106 INFO    MainThread:2866612 [wandb_setup.py:_flush():76] Current SDK version is 0.16.5
+2024-04-30 10:41:11,106 INFO    MainThread:2866612 [wandb_setup.py:_flush():76] Configure stats pid to 2866612
+2024-04-30 10:41:11,106 INFO    MainThread:2866612 [wandb_setup.py:_flush():76] Loading settings from /home/hepengyu/.config/wandb/settings
+2024-04-30 10:41:11,106 INFO    MainThread:2866612 [wandb_setup.py:_flush():76] Loading settings from /home/hepengyu/training/wandb/settings
+2024-04-30 10:41:11,106 INFO    MainThread:2866612 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'mode': 'offline'}
+2024-04-30 10:41:11,106 INFO    MainThread:2866612 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-30 10:41:11,106 WARNING MainThread:2866612 [wandb_setup.py:_flush():76] Could not save program above cwd: /home/hepengyu/diffusers/examples/consistency_distillation/train_lcm_distill_sd_wds.py
+2024-04-30 10:41:11,106 INFO    MainThread:2866612 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': None, 'program_abspath': '/home/hepengyu/diffusers/examples/consistency_distillation/train_lcm_distill_sd_wds.py', 'program': '/home/hepengyu/diffusers/examples/consistency_distillation/train_lcm_distill_sd_wds.py'}
+2024-04-30 10:41:11,106 INFO    MainThread:2866612 [wandb_init.py:_log_setup():527] Logging user logs to /home/hepengyu/training/wandb/offline-run-20240430_104111-mg5gskpp/logs/debug.log
+2024-04-30 10:41:11,106 INFO    MainThread:2866612 [wandb_init.py:_log_setup():528] Logging internal logs to /home/hepengyu/training/wandb/offline-run-20240430_104111-mg5gskpp/logs/debug-internal.log
+2024-04-30 10:41:11,106 INFO    MainThread:2866612 [wandb_init.py:init():567] calling init triggers
+2024-04-30 10:41:11,107 INFO    MainThread:2866612 [wandb_init.py:init():574] wandb.init called with sweep_config: {}
+config: {}
+2024-04-30 10:41:11,107 INFO    MainThread:2866612 [wandb_init.py:init():617] starting backend
+2024-04-30 10:41:11,107 INFO    MainThread:2866612 [wandb_init.py:init():621] setting up manager
+2024-04-30 10:41:11,107 INFO    MainThread:2866612 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-04-30 10:41:11,108 INFO    MainThread:2866612 [wandb_init.py:init():629] backend started and connected
+2024-04-30 10:41:11,109 INFO    MainThread:2866612 [wandb_init.py:init():721] updated telemetry
+2024-04-30 10:41:11,109 INFO    MainThread:2866612 [wandb_init.py:init():754] communicating run to backend with 90.0 second timeout
+2024-04-30 10:41:11,119 INFO    MainThread:2866612 [wandb_init.py:init():805] starting run threads in backend
+2024-04-30 10:41:13,891 INFO    MainThread:2866612 [wandb_run.py:_console_start():2323] atexit reg
+2024-04-30 10:41:13,891 INFO    MainThread:2866612 [wandb_run.py:_redirect():2178] redirect: wrap_raw
+2024-04-30 10:41:13,891 INFO    MainThread:2866612 [wandb_run.py:_redirect():2243] Wrapping output streams.
+2024-04-30 10:41:13,891 INFO    MainThread:2866612 [wandb_run.py:_redirect():2268] Redirects installed.
+2024-04-30 10:41:13,892 INFO    MainThread:2866612 [wandb_init.py:init():848] run started, returning control to user process
+2024-04-30 10:41:13,898 INFO    MainThread:2866612 [wandb_run.py:_config_callback():1347] config_cb None None {'pretrained_teacher_model': '/home/hepengyu/models/LCM_build', 'pretrained_vae_model_name_or_path': None, 'teacher_revision': None, 'revision': None, 'output_dir': '/home/hepengyu/trainingLCM/round3k=8num=2000/output', 'cache_dir': '/home/hepengyu/trainingLCM/round3k=8num=2000/cache', 'seed': 453645634, 'logging_dir': '/home/hepengyu/trainingLCM/round3k=8num=2000/logs', 'report_to': 'all', 'checkpointing_steps': 2000, 'checkpoints_total_limit': 10, 'resume_from_checkpoint': 'latest', 'train_shards_path_or_url': 'pipe:curl -L -s file:///home/hepengyu/testdb/{00000..00001}.tar', 'resolution': 512, 'interpolation_type': 'bilinear', 'center_crop': False, 'random_flip': False, 'dataloader_num_workers': 8, 'train_batch_size': 12, 'num_train_epochs': 1, 'max_train_steps': 1000, 'max_train_samples': 4000000, 'learning_rate': 1e-06, 'scale_lr': False, 'lr_scheduler': 'constant', 'lr_warmup_steps': 500, 'gradient_accumulation_steps': 1, 'use_8bit_adam': True, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_weight_decay': 0.0, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'proportion_empty_prompts': 0, 'w_min': 5.0, 'w_max': 15.0, 'num_ddim_timesteps': 125, 'loss_type': 'huber', 'huber_c': 0.001, 'unet_time_cond_proj_dim': 256, 'vae_encode_batch_size': 32, 'timestep_scaling_factor': 10.0, 'ema_decay': 0.95, 'mixed_precision': 'fp16', 'allow_tf32': False, 'cast_teacher_unet': False, 'enable_xformers_memory_efficient_attention': True, 'gradient_checkpointing': True, 'local_rank': 0, 'validation_steps': 200, 'push_to_hub': False, 'hub_token': None, 'hub_model_id': None, 'tracker_project_name': 'text2image-fine-tune'}
+2024-04-30 11:13:40,453 INFO    MainThread:2866612 [wandb_run.py:_finish():2052] finishing run text2image-fine-tune/mg5gskpp
+2024-04-30 11:13:40,453 INFO    MainThread:2866612 [wandb_run.py:_atexit_cleanup():2292] got exitcode: 0
+2024-04-30 11:13:40,453 INFO    MainThread:2866612 [wandb_run.py:_restore():2275] restore
+2024-04-30 11:13:40,453 INFO    MainThread:2866612 [wandb_run.py:_restore():2281] restore done
+2024-04-30 11:13:41,723 INFO    MainThread:2866612 [wandb_run.py:_footer_history_summary_info():3920] rendering history
+2024-04-30 11:13:41,723 INFO    MainThread:2866612 [wandb_run.py:_footer_history_summary_info():3952] rendering summary
